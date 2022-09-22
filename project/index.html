@@ -1,0 +1,1418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>index</title>
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+    integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+</head>
+<body>
+   <nav class="w-100">
+       <div class="header w-100 px-5">
+           <div class="row d-flex justify-content-between">
+               <div class="nav-left d-flex align-items-center">
+                   <div class="nav-menu d-flex mr-lg-5 mr-3">
+                        <a class="text-dark mr-2 d-none d-lg-flex " href="#">Menu</a>
+                        <img class="mt-2" src="./images/icon_menu_01.svg" alt width="18" height="12">
+                   </div>
+                   <div class="nav-login d-flex ">
+                        <a class="text-dark mr-2 d-none d-lg-flex" href="#">Login</a>
+                        <img class="mt-1" src="./images/icon_login_01.svg" alt width="20" height="16">
+                   </div>
+               </div>
+               <div class="nav-logo">
+                   <h1 class="">
+                       <a href="/"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 212.601 108.92" width="50" height="26"><path d="M138.267 40.793v-4.687h.002C138.269 13.072 125.566 0 109.382 0 90.334 0 77.014 16.963 77.014 39.995c0 24.435 13.07 39.997 32.368 39.997 12.824 0 22.787-7.78 27.764-23.344l-3.361-1.865c-4.11 11.203-10.71 18.674-21.166 18.674-14.191 0-16.185-16.809-16.185-30.661v-2.003zM108.637 4.67c8.464 0 10.208 10.736 10.208 19.607v11.819h-22.41v-4.658c.374-9.961.623-26.768 12.201-26.768z"></path><path d="M135.287 73.463h8.962V6.542h-8.962V1.873l26.888-.021v10.603h.25C166.658 4.207 173.507.005 182.22.005c12.574 0 21.416 8.405 21.416 25.679v47.779h8.965v4.67h-35.86v-4.67h8.965V22.57c0-12.138-4.605-15.094-9.709-15.094-6.972 0-13.822 8.402-13.822 21.475v44.51h8.965v4.67h-35.853zM41.509 1.846H0v4.651h8.99v97.737L0 104.23v4.69h35.917v-4.672h-9.01l.026-27.045a31.057 31.057 0 0013.153 2.72c19.05 0 32.344-15.97 32.344-39.861 0-30.666-20.812-38.216-30.921-38.216zm-1.423 73.407c-11.79 0-13.1-14.204-13.192-30.5l.012-38.251h9.214c13.092 0 16.9 14.675 16.9 33.51 0 18.562.015 35.24-12.934 35.24z"></path><path d="M32.085 85.144h1.349l.833 4.09h.024l.835-4.09h1.23l.88 4.09h.025l.788-4.09h1.347l-1.463 6.543h-1.348l-.88-4.088h-.022l-.764 4.089H33.57zm9.868 0v6.543h-1.436v-6.542zm-1.436-1.128v-1.372h1.436v1.372zm2.582 2.645v-1.228h.57v-1.779h1.437v1.78h.928v1.227h-.928v3.34c0 .325.264.483.653.483a1.922 1.922 0 00.285-.013v1.276a4.729 4.729 0 01-.821.061c-.937 0-1.553-.36-1.553-1.3V86.66zm4.111 5.027v-8.686h1.44v2.887a2.326 2.326 0 011.565-.863c.882 0 1.337.47 1.337 1.683v4.978h-1.44v-4.81c0-.434-.137-.725-.526-.725-.297 0-.628.304-.936.591v4.945zm8.614 0v-8.686h1.727l2.191 5.148h.024v-5.148h1.439v8.686h-1.508l-2.41-5.606h-.023v5.606zm8.226-4.139v-.36c0-.578.263-.938.846-.938.582 0 .846.36.846.938v.36zm3.13 1.228v-1.529a2.285 2.285 0 00-4.569.098v2.14a2.157 2.157 0 002.285 2.323 2.057 2.057 0 002.285-2.143h-1.439a.805.805 0 01-.846.915c-.48 0-.845-.288-.845-.938v-.866zm.869-3.633h1.348l.835 4.09h.025l.832-4.09h1.231l.881 4.09h.024l.785-4.09h1.35l-1.462 6.543h-1.35l-.876-4.088h-.024l-.765 4.089h-1.348zm13.093-.264h.022l.765 3.512h-1.565zm-1.51 6.807l.446-1.83h2.18l.4 1.83h1.51l-1.987-8.685h-2.022l-2.048 8.686zm4.925-5.026v-1.228h.569v-1.779h1.441v1.78h.925v1.227h-.925v3.34c0 .325.262.483.65.483a1.941 1.941 0 00.288-.013v1.276a4.778 4.778 0 01-.823.061c-.938 0-1.556-.36-1.556-1.3V86.66zm3.953 0v-1.228h.57v-1.779h1.44v1.78h.927v1.227h-.927v3.34c0 .325.263.483.652.483a1.942 1.942 0 00.286-.013v1.276a4.776 4.776 0 01-.824.061c-.938 0-1.554-.36-1.554-1.3V86.66zm5.562-1.517v6.543h-1.438v-6.542zm-1.438-1.128v-1.372h1.438v1.372zm2.639 2.645v-1.228h.573v-1.779h1.437v1.78h.926v1.227h-.926v3.34c0 .325.264.483.653.483a1.916 1.916 0 00.285-.013v1.276a4.765 4.765 0 01-.824.061c-.936 0-1.551-.36-1.551-1.3V86.66zm8.454-1.517v6.543h-1.393v-.746a2.513 2.513 0 01-1.612.867c-.88 0-1.335-.471-1.335-1.684v-4.98h1.44v4.811c0 .434.136.72.524.72.297 0 .629-.3.936-.587v-4.944zm4.251 5.063a1.116 1.116 0 01-.87.469c-.386 0-.707-.264-.707-1.56v-1.4c0-1.296.321-1.564.708-1.564a1.127 1.127 0 01.869.469zm1.438 1.48v-8.685h-1.438v2.744c-.688-.527-1.05-.72-1.44-.72-1.12 0-1.575.914-1.575 2.596v1.588c0 1.682.455 2.598 1.575 2.598a2.023 2.023 0 001.53-.916h.023v.796zm2.638-4.138v-.36c0-.578.264-.938.846-.938s.846.36.846.938v.36zm3.131 1.228v-1.529a2.287 2.287 0 00-4.572.098v2.14a2.158 2.158 0 002.287 2.323 2.058 2.058 0 002.285-2.143h-1.44a.804.804 0 01-.845.915c-.48 0-.846-.288-.846-.938v-.866z"></path></svg></a></h1>
+               </div>
+               <div class="nav-right d-flex align-items-center offset-1">
+                   <a class="text-dark mr-2 d-none d-lg-flex" href="#">Search</a>
+                   <img class="mt-1" src="./images/icon_search_01.svg" alt width="16" height="16">
+               </div>
+           </div>
+       </div>
+   </nav>
+   <div class="mainSection w-100" >
+    <div class="mainBox">
+        <div class="row">
+            <div class="col">
+                <div class="mainCard bg-white w-100 p-3 border border-secondary ">
+                    <div class="mainCardTop w-100 ">
+                        <div class="MainImg-wrap d-flex justify-content-center">
+                            <img class="mainCardImg w-100" src="./images/main-01.jpeg" alt="">
+                            <!-- 要再加輪播牆 -->
+                        </div>
+                    </div>
+                   
+                    <div class="infoBottom-M px-2">
+                        <div class="">
+                            <a class="text-dark" href="/article/011080.html">
+                                <p class="mainCard-P mt-2">
+                                    バターと小豆と生クリームが生む、新触感の「フレンチトースト」
+                                </p>
+                            </a>
+                        </div>
+                        <ul class="list-unstyled d-flex">
+                            <li class="infoSpan">
+                                <a href="#" class="text-black-50 pr-2 mr-2">Food</a>
+                            </li>
+                            <li class="infoSpan">
+                                <a href="#" class="text-black-50 pr-2 mr-2">スイーツ</a>
+                            </li>
+                            <li class="infoSpan">
+                                <a href="#" class="text-black-50 pr-2 mr-2">TOKYOスイーツパトロール</a>
+                            </li>
+                        </ul>
+                    </div>  
+                    <div class="infoBottom-W px-2">
+                        <div class="">
+                            <a class="text-dark" href="/article/011080.html">
+                                <p class="mainCard-P mt-2">
+                                    バターと小豆と生クリームが生む、新触感の「フレンチトースト」
+                                </p>
+                            </a>
+                        </div>
+                        <ul class="list-unstyled d-flex">
+                            <li class="infoSpan">
+                                <a href="#" class="pr-2 mr-2">Food</a>
+                            </li>
+                            <li class="infoSpan">
+                                <a href="#" class="pr-2 mr-2">スイーツ</a>
+                            </li>
+                            <li class="infoSpan">
+                                <a href="#" class="pr-2 mr-2">TOKYOスイーツパトロール</a>
+                            </li>
+                        </ul>
+                    </div> 
+        <div class="row">
+            <div class="mainButton-W">
+                <a class=" text-black-50 mr-3 mb-2" href="">01</a>
+                <a class=" text-black-50 mr-3 mb-2" href="">02</a>
+                <a class=" text-black-50 mr-3 mb-2" href="">03</a>
+                <a class=" text-black-50 mr-3 mb-2" href="">04</a>
+                <div></div>
+                <a class=" text-black-50 btnNext " href="">Next</a>
+        </div>
+        </div>
+        <div class="row">
+            <div class="mainButton">
+                <a class="pb-1 text-black-50 mr-2" href="">01</a>
+                <a class="pb-1 text-black-50 mr-2" href="">02</a>
+                <a class="pb-1 text-black-50 mr-2" href="">03</a>
+                <a class="pb-1 text-black-50 mr-4" href="">04</a>
+                <a class="pb-1 text-black-50 " href="">Next</a>
+            </div>
+                </div>
+            </div>
+        </div>
+        
+        </div>
+    </div>
+ 
+   </div>
+   <div class="LatestSection w-100 ">
+       <div class="LatestBox">
+        <div class="titleBox pt-5 ">
+            <div class="lineBox">
+                <div class="line"></div>
+            </div>
+            <div class="titleName">
+                 <p >Latest</p>
+            </div>
+            
+        </div>
+        <div class="row">
+             <div class="col-12 col-lg-3">
+                 <div class="LatestCard w-90">
+                     <div class="LatestCard-Top border border-secondary">
+                         <div class="img-wrap p-3">
+                             <img class="w-100" src="./images/latestSection-01.jpeg" alt="">
+                         </div>
+                         <div class="img-textA">
+                             <p>Food</p>
+                         </div>
+                     </div>
+                     <div class="LatestCard-Botton">
+                         <div class="LatestCard-info pt-2">
+                             <p>こだわりの詰まった産地の味を堪能したい、お取り寄せの豆腐2選</p>
+                         </div>
+                         <div class="LatestCard-infoS pb-3">
+                             <ul class="list-unstyled d-flex">
+                                 <li class="cardSpan">
+                                     <a href="#" class="text-black-50 pr-2">Food</a>
+                                     <span>|</span>
+                                 </li>
+                                 <li class="cardSpan">
+                                     <a href="#" class="text-black-50 px-2">今日はどっちのお取り寄せ</a>
+                                     <span>|</span>
+                                 </li>
+                                 <li class="cardSpan">
+                                     <a href="#" class="text-black-50 pl-2">お取り寄せ</a>
+                                 </li>
+                             </ul>
+                             <div class="times">
+                                 <p class="text-black-50 ">2022.07.23</p>
+                             </div>
+                         </div>
+                     </div>
+                 </div>
+             </div>
+             <div class="col-12 col-lg-3">
+                 <div class="LatestCard w-90">
+                     <div class="LatestCard-Top border border-secondary">
+                     <div class="img-wrap p-3">
+                         <img class="w-100" src="./images/latestSection-02.png" alt="">
+                     </div>
+                     <div class="img-textB">
+                         <p>Culture</p>
+                     </div>
+                     </div>
+                     <div class="LatestCard-Botton">
+                     <div class="LatestCard-info pt-2">
+                         <p>小山薫堂と「NOT A HOTEL」代表の濱渦伸次が語る、二拠点生活の可能性</p>
+                     </div>
+                     <div class="LatestCard-infoS pb-3">
+                         <ul class="list-unstyled d-flex overSpan">
+                             <li class="cardSpan">
+                                 <a href="#" class=" text-black-50 pr-1 ">Culture</a>
+                                 <span>|</span>
+                             </li>
+                             <li class="cardSpan">
+                                 <a href="#" class="text-black-50  px-2">from madame FIGARO.jp</a>
+                                 <span>|</span>
+                             </li>
+                             <li class="cardSpan">
+                                 <a href="#" class="text-black-50 pl-2">フェミニズム</a>
+                                 <span>|</span>
+                             </li>
+                             <li class="cardSpan overSpan">
+                                 <a href="#" class="text-black-50 pl-2">ジェンダー</a>
+                             </li>
+                         </ul>
+                         <div class="times">
+                             <p class="text-black-50 ">2022.07.19</p>
+                         </div>
+                     </div>
+                     </div>
+                 </div>
+             </div>
+             <div class=" col-12 col-lg-3">
+                 <div class="LatestCard w-90">
+                     <div class="LatestCard-Top border border-secondary">
+                         <div class="img-wrap p-3">
+                             <img class="w-100" src="./images/latestSection-03.jpeg" alt="">
+                         </div>
+                         <div class="img-textC">
+                             <p>Art</p>
+                         </div>
+                     </div>
+                     <div class="LatestCard-Botton">
+                         <div class="LatestCard-info pt-2">
+                             <p>世界中で僻地の絶景を切り取る話題の写真家、上田優紀の新刊2冊に注目</p>
+                         </div>
+                         <div class="LatestCard-infoS pb-3">
+                             <ul class="list-unstyled d-flex">
+                                 <li class="cardSpan">
+                                     <a href="#" class="text-black-50 mr-2">Art</a>
+                                     <span>|</span>
+                                 </li>
+                                 <li class="cardSpan">
+                                     <a href="#" class="text-black-50 ml-2 mr-1">本</a>
+                                     <span>|</span>
+                                 </li>
+                                 <li class="cardSpan">
+                                     <a href="#" class="text-black-50 ml-2">写真集</a>
+                                 </li>
+                             </ul>
+                             <div class="times">
+                                 <p class="text-black-50 ">2022.07.23</p>
+                             </div>
+                         </div>
+                     </div>
+                 </div>
+             </div>
+             <div class="d-none d-lg-flex col-12 col-lg-3">
+                <div class="LatestCard w-90">
+                    <div class="LatestCard-Top border border-secondary">
+                        <div class="img-wrap p-3">
+                            <img class="w-100" src="./images/latestSection-04.jpeg" alt="">
+                        </div>
+                        <div class="img-textD">
+                            <p>Architecture</p>
+                        </div>
+                    </div>
+                    <div class="LatestCard-Botton">
+                        <div class="LatestCard-info pt-2">
+                            <p>“海中”で泳ぐ魚を見ながら涼しく食事できる、「アンダーウォーター・レストラン」6選</p>
+                        </div>
+                        <div class="LatestCard-infoS pb-3">
+                            <ul class="list-unstyled d-flex">
+                                <li class="cardSpan">
+                                    <a href="#" class="text-black-50 pr-2">Architecture</a>
+                                    <span>|</span>
+                                </li>
+                                <li class="cardSpan">
+                                    <a href="#" class="text-black-50 pl-2">ホテル</a>
+                                </li>
+                            </ul>
+                            <div class="times">
+                                <p class="text-black-50 ">2022.07.23</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="d-none d-lg-flex col-12 col-lg-3">
+                <div class="LatestCard w-90">
+                    <div class="LatestCard-Top border border-secondary">
+                        <div class="img-wrap p-3">
+                            <img class="w-100" src="./images/latestSection-05.jpeg" alt="">
+                        </div>
+                        <div class="img-textB">
+                            <p>Culture</p>
+                        </div>
+                    </div>
+                    <div class="LatestCard-Botton">
+                        <div class="LatestCard-info pt-2">
+                            <p>クリストファー・ノーラン監督の次回作「OPPENHEIMER」のポスターが公開！</p>
+                        </div>
+                        <div class="LatestCard-infoS pb-3">
+                            <ul class="list-unstyled d-flex">
+                                <li class="cardSpan">
+                                    <a href="#" class="text-black-50 pr-2">Culture</a>
+                                    <span>|</span>
+                                </li>
+                                <li class="cardSpan">
+                                    <a href="#" class="text-black-50 pl-2">映画</a>
+                                </li>
+                            </ul>
+                            <div class="times">
+                                <p class="text-black-50 ">2022.07.22</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="Dhidden col-12 col-lg-3">
+                <div class="LatestCard w-90">
+                    <div class="LatestCard-Top border border-secondary">
+                        <div class="img-wrap p-3">
+                            <img class="w-100" src="./images/latestSection-06.png" alt="">
+                        </div>
+                        <div class="img-textE">
+                            <p>Product</p>
+                        </div>
+                    </div>
+                    <div class="LatestCard-Botton">
+                        <div class="LatestCard-info pt-2">
+                            <p>ソニー1000Xシリーズの上質な音が、 日常のシーンを豊かにする</p>
+                        </div>
+                        <div class="LatestCard-infoS pb-3">
+                            <ul class="list-unstyled d-flex overSpan">
+                                <li class="cardSpan">
+                                    <a href="#" class="text-black-50 pr-1">PR</a>
+                                    <span>|</span>
+                                </li>
+                                <li class="cardSpan">
+                                    <a href="#" class="text-black-50 pl-2">Product</a>
+                                    <span>|</span>
+                                </li>
+                                <li class="cardSpan">
+                                    <a href="#" class="text-black-50 pl-2">ソニー</a>
+                                    <span>|</span>
+                                </li>
+                                <li class="cardSpan">
+                                    <a href="#" class="text-black-50 pl-2">イヤホン</a>
+                                    <span>|</span>
+                                </li>
+                                <li class="cardSpan">
+                                    <a href="#" class="text-black-50 pl-2">ワイヤレスイヤホン</a>
+                                    <span>|</span>
+                                </li>
+                                <li class="cardSpan overSpan">
+                                    <a href="#" class="text-black-50 pl-2">ガジェット</a>
+                                </li>
+                            </ul>
+                            <div class="times">
+                                <p class="text-black-50 ">2022.07.22</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="d-none d-lg-flex col-12 col-lg-3">
+                <div class="LatestCard w-90">
+                    <div class="LatestCard-Top border border-secondary">
+                        <div class="img-wrap p-3">
+                            <img class="w-100" src="./images/latestSection-07.jpeg" alt="">
+                        </div>
+                        <div class="img-textB">
+                            <p>Culture</p>
+                        </div>
+                    </div>
+                    <div class="LatestCard-Botton">
+                        <div class="LatestCard-info pt-2">
+                            <p>ソニー1000Xシリーズの上質な音が、 日常のシーンを豊かにする</p>
+                        </div>
+                        <div class="LatestCard-infoS pb-3">
+                            <ul class="list-unstyled d-flex overSpan">
+                                <li class="cardSpan">
+                                    <a href="#" class="text-black-50 pr-1">Culture</a>
+                                    <span>|</span>
+                                </li>
+                                <li class="cardSpan">
+                                    <a href="#" class="text-black-50 pl-2">Netflix</a>
+                                    <span>|</span>
+                                </li>
+                                <li class="cardSpan">
+                                    <a href="#" class="text-black-50 pl-2">海外ドラマ</a>
+                                </li>
+                            </ul>
+                            <div class="times">
+                                <p class="text-black-50 ">2022.07.22</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="d-none d-lg-flex col-12 col-lg-3">
+                <div class="LatestCard w-90">
+                    <div class="LatestCard-Top border border-secondary">
+                        <div class="img-wrap p-3">
+                            <img class="w-100" src="./images/latestSection-08.jpeg" alt="">
+                        </div>
+                        <div class="img-textF">
+                            <p>Cars</p>
+                        </div>
+                    </div>
+                    <div class="LatestCard-Botton">
+                        <div class="LatestCard-info pt-2">
+                            <p>ボルボとチームラボの意外な共通点とは？　佐賀の武雄温泉でアート展を開催</p>
+                        </div>
+                        <div class="LatestCard-infoS pb-3">
+                            <ul class="list-unstyled d-flex overSpan">
+                                <li class="cardSpan">
+                                    <a href="#" class="text-black-50 pr-1">Cars</a>
+                                    <span>|</span>
+                                </li>
+                                <li class="cardSpan">
+                                    <a href="#" class="text-black-50 pl-2">ボルボ</a>
+                                    <span>|</span>
+                                </li>
+                                <li class="cardSpan">
+                                    <a href="#" class="text-black-50 pl-2">チームラボ</a>
+                                </li>
+                            </ul>
+                            <div class="times">
+                                <p class="text-black-50 ">2022.07.22</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="viewMoreBox m-auto w-100 d-flex justify-content-center">
+            <div class="viewMore d-flex justify-content-center">
+                <a href="https://www.pen-online.jp/latest/" class=" mb-2 text-dark">View More&nbsp&nbsp&nbsp&nbsp></p>
+            </div>
+        </div>
+       </div>
+    </div>
+    <div class="highlightSection">
+        <div class="LatestBox">
+            <div class="titleBox pt-5 ">
+                <div class="lineBox">
+                    <div class="line"></div>
+                </div>
+                <div class="titleName">
+                     <p >Hightlight</p>
+                </div>
+                
+            </div>
+            <div class="row mx-1">
+                <div class="col-12 col-lg-6 ">
+                    <div class="LatestCard w-90">
+                        <div class="hightLight-Top border border-secondary">
+                            <div class="img-wrap p-lg-5 p-3">
+                                <img class="w-100" src="./images/highlight-01.jpeg" alt="">
+                            </div>
+                            <div class="img-textG">
+                                <p>Product</p>
+                            </div>
+                        </div>
+                        <div class="LatestCard-Botton">
+                            <div class="LatestCard-info pt-2">
+                                <p>100年以上にも亘り受け継がれてきた職人技が光る、広島県福山市発のインテリアブランド</p>
+                            </div>
+                            <div class="LatestCard-infoS pb-3">
+                                <ul class="list-unstyled d-flex">
+                                    <li class="cardSpan">
+                                        <a href="#" class="text-black-50 pr-2">PR</a>
+                                        <span>|</span>
+                                    </li>
+                                    <li class="cardSpan">
+                                        <a href="#" class="text-black-50 px-2">Product</a>
+                                        <span>|</span>
+                                    </li>
+                                    <li class="cardSpan">
+                                        <a href="#" class="text-black-50 pl-2">家具</a>
+                                    </li>
+                                </ul>
+                                <div class="times">
+                                    <p class="text-black-50 ">2022.07.18</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6">
+                    <div class="LatestCard w-90">
+                        <div class="hightLight-Top-Top border border-secondary">
+                            <div class="img-wrap p-lg-5 p-3">
+                                <img class="w-100" src="./images/highlight-02.jpeg" alt="">
+                            </div>
+                            <div class="img-textH">
+                                <p>Watches</p>
+                            </div>
+                        </div>
+                        <div class="LatestCard-Botton">
+                            <div class="LatestCard-info pt-2">
+                                <p>“世界初”が凝縮した、パテック フィリップの美しきサロンが誕生</p>
+                            </div>
+                            <div class="LatestCard-infoS pb-3">
+                                <ul class="list-unstyled d-flex">
+                                    <li class="cardSpan">
+                                        <a href="#" class="text-black-50 pr-2">PR</a>
+                                        <span>|</span>
+                                    </li>
+                                    <li class="cardSpan">
+                                        <a href="#" class="text-black-50 px-2">Watches</a>
+                                        <span>|</span>
+                                    </li>
+                                    <li class="cardSpan">
+                                        <a href="#" class="text-black-50 pl-2">パテック フィリップ</a>
+                                    </li>
+                                </ul>
+                                <div class="times">
+                                    <p class="text-black-50 ">2022.07.14</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row mx-1">
+                <div class="d-lg-flex col-12 col-lg-4">
+                    <div class="LatestCard w-90">
+                        <div class="LatestCard-Top border border-secondary">
+                            <div class="img-wrap p-lg-4 p-3">
+                                <img class="w-100" src="./images/highlight-03.jpeg" alt="">
+                            </div>
+                            <div class="img-textK">
+                                <p>Food</p>
+                            </div>
+                        </div>
+                        <div class="LatestCard-Botton">
+                            <div class="LatestCard-info pt-2">
+                                <p>俳優・宮沢りえとプレモル醸造家が、最高峰のこだわりに出会う旅。 Vol.2：超予約困難店シェフ・須賀洋介</p>
+                            </div>
+                            <div class="LatestCard-infoS pb-3">
+                                <ul class="list-unstyled d-flex">
+                                    <li class="cardSpan">
+                                        <a href="#" class="text-black-50 pr-2">PR</a>
+                                        <span>|</span>
+                                    </li>
+                                    <li class="cardSpan">
+                                        <a href="#" class="text-black-50 px-2">Food</a>
+                                        <span>|</span>
+                                    </li>
+                                    <li class="cardSpan">
+                                        <a href="#" class="text-black-50 pl-2">ビール</a>
+                                    </li>
+                                </ul>
+                                <div class="times">
+                                    <p class="text-black-50 ">2022.07.12</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-none d-lg-flex col-12 col-lg-4">
+                    <div class="LatestCard w-90">
+                        <div class="LatestCard-Top border border-secondary">
+                            <div class="img-wrap p-lg-4 p-3">
+                                <img class="w-100" src="./images/highlight-04.jpeg" alt="">
+                            </div>
+                            <div class="img-textI">
+                                <p>Product</p>
+                            </div>
+                        </div>
+                        <div class="LatestCard-Botton">
+                            <div class="LatestCard-info pt-2">
+                                <p>ワークスペースを見直す第一歩は、快適な椅子選びから</p>
+                            </div>
+                            <div class="LatestCard-infoS pb-3">
+                                <ul class="list-unstyled d-flex">
+                                    <li class="cardSpan">
+                                        <a href="#" class="text-black-50 pr-2">PR</a>
+                                        <span>|</span>
+                                    </li>
+                                    <li class="cardSpan">
+                                        <a href="#" class="text-black-50 px-2">Product</a>
+                                    </li>
+                                </ul>
+                                <div class="times">
+                                    <p class="text-black-50 ">2022.06.28</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-none d-lg-flex col-12 col-lg-4">
+                    <div class="LatestCard w-90">
+                        <div class="LatestCard-Top border border-secondary">
+                            <div class="img-wrap p-lg-4 p-3">
+                                <img class=" w-100" src="./images/highlight-05.jpeg" alt="">
+                            </div>
+                            <div class="img-textJ">
+                                <p>Design</p>
+                            </div>
+                        </div>
+                        <div class="LatestCard-Botton">
+                            <div class="LatestCard-info pt-2">
+                                <p>企業が市民に寄り添いながら、地域を変える拠点をつくる</p>
+                            </div>
+                            <div class="LatestCard-infoS pb-3">
+                                <ul class="list-unstyled d-flex">
+                                    <li class="cardSpan">
+                                        <a href="#" class="text-black-50 pr-2">PR</a>
+                                        <span>|</span>
+                                    </li>
+                                    <li class="cardSpan">
+                                        <a href="#" class="text-black-50 px-2">Design</a>
+                                    </li>
+                                </ul>
+                                <div class="times">
+                                    <p class="text-black-50 ">2022.06.28</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="viewMoreBox m-auto w-100 d-flex justify-content-center">
+                <div class="viewMore d-flex justify-content-center">
+                    <p class="mr-4 mb-2">View More</p>
+                    <span>></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="graySection">
+        <div class="grayBox">
+            <div class="row  pb-3 d-flex justify-content-center">
+                <div class="grayButton-M">
+                    <a class="pb-1 text-white-50 mr-2" href="">01</a>
+                    <a class="pb-1 text-white-50 mr-2" href="">02</a>
+                    <a class="pb-1 text-white-50 mr-2" href="">03</a>
+                    <a class="pb-1 text-white-50 mr-2" href="">04</a>
+                    <a class="pb-1 text-white-50" href="">05</a>
+                </div>
+            </div>
+            <div class="row align-items-center mx-1">
+                <div class="col-12 col-lg-6">
+                    <div class="graySectionCard w-100 p-3">
+                        <div class="img-wrap ">
+                            <img class="w-100" src="./images/graySection-01.jpeg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6">
+                    <div class="graySectionCard-right">
+                        <div class="graySectionCard-info pt-2 pb-2">
+                            <p class="gray-title pb-3">100年以上にも亘り受け継がれてきた職人技が光る、広島県福山市発のインテリアブランド</p>
+                            <p class="grayP w-100">Pen 2020年5月1・15日合併号『井上陽水が聴きたくて。』特集に登場してくれたタモリ。井上陽水とはもう40年近いつきあいになるというタモリだからこそ語れる、陽水の知られざる素顔を語ってくれた。ここでは、本誌では掲載しきれなかった秘蔵エピソードを紹介しよう。僕がこの世界に入ったのは30歳の時で1975年頃だったから、初めて陽水の曲を聴いたのはまだ福岡にい...</p>
+                        </div>
+                        <div class="graySectionCard-infoS">
+                            <div class="grayTimes">
+                                <p class="">2020.04.22</p>
+                            </div>
+                        </div>
+                        <div class="readMoreBox">
+                            <div class="readMore d-flex">
+                                <a href="https://www.pen-online.jp/article/009071.html" class="mr-4 mb-2 text-white">View More</a>
+                                <span class="text-white">></span>
+                            </div>
+                            <div class="readMore-line"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row w-100">
+                <div class="grayButton w-50">
+                    <a class="pb-1 text-white-50 mr-2" href="">01</a>
+                    <a class="pb-1 text-white-50 mr-2" href="">02</a>
+                    <a class="pb-1 text-white-50 mr-2" href="">03</a>
+                    <a class="pb-1 text-white-50 mr-2" href="">04</a>
+                    <a class="pb-1 text-white-50" href="">05</a>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+    <div class="centerSection">
+        <div>
+            <div class="centerBox w-100 px-3">
+                <div class="col-12 col-xl-6 col-lg-8 centerBox-wrap border border-secondary m-auto">
+                    <div class="topLine "></div>
+                    <div class="centerTop">
+                        <div class="center-title text-lg-center text-start">
+                            <p >Pen Online Official Columnist</p>
+                        </div>
+                        <div class="center-info text-lg-center text-start">
+                            <p>各分野で活躍するカルチャーエキスパートたちが、日々専門性のあるコラムを発信。
+                                <br>
+                                新時代のクリエイティブはここからキャッチアップ！
+                            </p>
+                        </div>
+                    </div>
+                    <div class="viewMoreBoxC m-auto w-100 d-flex justify-content-lg-center ">
+                        <div class="viewMore d-flex justify-content-center">
+                            <p class="mr-4 mb-2">View More</p>
+                            <span>></span>
+                        </div>
+                    </div>
+                    <div class="bottonLine d-flex justify-content-lg-end"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="specialSection">
+        <div class="titleBox pt-5 ">
+            <div class="lineBox">
+                <div class="line"></div>
+            </div>
+            <div class="titleName">
+                 <p >Special</p>
+            </div>
+            
+        </div>
+        <div class="specialBox">
+            <div class="specialRow  ml-2 ">
+                <div class="col-lg px-2">
+                    <div class="specialCard">
+                        <div class="specialTop border border-secondary p-lg-4 p-3">
+                            <img class="w-100" src="./images/special-01.jpeg" alt="">
+                        </div>
+                        <div class="specialBotton">
+                            <p>ネスプレッソのコーヒーはどこから来て、どこへ還るのか</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg px-2">
+                    <div class="specialCard">
+                        <div class="specialTop border border-secondary p-lg-4 p-3">
+                            <img class="w-100" src="./images/special-02.jpeg" alt="">
+                        </div>
+                        <div class="specialBotton">
+                            <p>playing REGAL 可能性を、遊び尽くせ！</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg px-2">
+                    <div class="specialCard">
+                        <div class="specialTop border border-secondary p-lg-4 p-3">
+                            <img class="w-100" src="./images/special-03.jpeg" alt="">
+                        </div>
+                        <div class="specialBotton">
+                            <p>MIYAVIが纏う　グッチ、未来への物語</p>
+                        </div>
+                    </div>   
+                </div>
+                <div class="col-lg px-2">
+                    <div class="specialCard">
+                        <div class="specialTop border border-secondary p-lg-4 p-3">
+                            <img class="w-100" src="./images/special-04.jpeg" alt="">
+                        </div>
+                        <div class="specialBotton">
+                            <p>直感的操作が可能なSurfaceの先進性</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg px-2">
+                    <div class="specialCard">
+                        <div class="specialTop border border-secondary p-lg-4 p-3">
+                            <img class="w-100" src="./images/special-05.jpeg" alt="">
+                        </div>
+                        <div class="specialBotton">
+                            <p>アクティブな ライフスタイルに味⽅する、 2本のダイバーズウォッチ</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg px-2">
+                    <div class="specialCard">
+                        <div class="specialTop border border-secondary p-lg-4 p-3">
+                            <img class="w-100" src="./images/special-06.jpeg" alt="">
+                        </div>
+                        <div class="specialBotton">
+                            <p>らしく、美しく暮らす──。クリエイターが語る、白金という特別な場所。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="videoSection">
+        <div class="titleBox pt-5 ">
+            <div class="lineBox">
+                <div class="line"></div>
+            </div>
+            <div class="titleName">
+                 <p >Video</p>
+            </div>
+        </div>
+        <div class="videoBox">
+            <div class="videoRow ml-2">
+                <div class="col-lg">
+                    <div class="videoCard ">
+                        <div class="VideoTop">
+                            <div class="img-wrap">
+                                <img class="w-100" src="./images/video-Section-01.jpeg" alt="">
+                            </div>
+                            <div class="img-textV">
+                                <p>Fashion</p>
+                            </div>
+                            <div class="videoPlay">
+                                <i class="fa-solid fa-play playIcon"></i>   
+                            </div>
+                        </div>
+                        <div class="videoBotton">
+                            <div class="LatestCard-info pt-2">
+                                <p>【光石研の東京古着日和】 VOL.5 さらば青春の、古着屋めぐり</p>
+                            </div>
+                            <div class="LatestCard-infoS pb-3">
+                                <ul class="list-unstyled d-flex">
+                                    <li class="cardSpan">
+                                        <a href="#" class="text-black-50 pr-2">Fashion</a>
+                                        <span>|</span>
+                                    </li>
+                                    <li class="cardSpan">
+                                        <a href="#" class="text-black-50 px-2">東京古着日和</a>
+                                    </li>
+                                </ul>
+                                <div class="times">
+                                    <p class="text-black-50 ">2021.03.26</p>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                <div class="col-lg">
+                    <div class="videoCard ">
+                        <div class="VideoTop">
+                            <div class="img-wrap">
+                                <img class="w-100" src="./images/video-Section-02.jpeg" alt="">
+                            </div>
+                            <div class="img-textV">
+                                <p>Fashion</p>
+                            </div>
+                            <div class="videoPlay">
+                                <i class="fa-solid fa-play playIcon"></i>   
+                            </div>
+                        </div>
+                        <div class="videoBotton">
+                            <div class="LatestCard-info pt-2">
+                                <p>【光石研の東京古着日和】 VOL.4 サイズがぴったりなんだよ</p>
+                            </div>
+                            <div class="LatestCard-infoS pb-3">
+                                <ul class="list-unstyled d-flex">
+                                    <li class="cardSpan">
+                                        <a href="#" class="text-black-50 pr-2">Fashion</a>
+                                        <span>|</span>
+                                    </li>
+                                    <li class="cardSpan">
+                                        <a href="#" class="text-black-50 px-2">東京古着日和</a>
+                                    </li>
+                                </ul>
+                                <div class="times">
+                                    <p class="text-black-50 ">2020.10.26</p>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                <div class="col-lg">
+                    <div class="videoCard ">
+                        <div class="VideoTop">
+                            <div class="img-wrap">
+                                <img class="w-100" src="./images/video-Section-03.jpeg" alt="">
+                            </div>
+                            <div class="img-textV">
+                                <p>Fashion</p>
+                            </div>
+                            <div class="videoPlay">
+                                <i class="fa-solid fa-play playIcon"></i>   
+                            </div>
+                        </div>
+                        <div class="videoBotton">
+                            <div class="LatestCard-info pt-2">
+                                <p>【光石研の東京古着日和】 ＜千駄ヶ谷 フリマ スペシャル 特別編＞ひと目惚れには手を出すな</p>
+                            </div>
+                            <div class="LatestCard-infoS pb-3">
+                                <ul class="list-unstyled d-flex">
+                                    <li class="cardSpan">
+                                        <a href="#" class="text-black-50 pr-2">Fashion</a>
+                                        <span>|</span>
+                                    </li>
+                                    <li class="cardSpan">
+                                        <a href="#" class="text-black-50 px-2">東京古着日和</a>
+                                    </li>
+                                </ul>
+                                <div class="times">
+                                    <p class="text-black-50 ">2020.07.08</p>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                <div class="col-lg">
+                    <div class="videoCard ">
+                        <div class="VideoTop">
+                            <div class="img-wrap">
+                                <img class="w-100" src="./images/video-Section-04.jpeg" alt="">
+                            </div>
+                            <div class="img-textV">
+                                <p>Fashion</p>
+                            </div>
+                            <div class="videoPlay">
+                                <i class="fa-solid fa-play playIcon"></i>   
+                            </div>
+                        </div>
+                        <div class="videoBotton">
+                            <div class="LatestCard-info pt-2">
+                                <p>自宅で“古着散策”をバーチャル体験!?  【光石研の東京古着日和 VOL.3 】アメカジ、渋カジ、からのイタカジ？</p>
+                            </div>
+                            <div class="LatestCard-infoS pb-3">
+                                <ul class="list-unstyled d-flex">
+                                    <li class="cardSpan">
+                                        <a href="#" class="text-black-50 pr-2">Fashion</a>
+                                        <span>|</span>
+                                    </li>
+                                    <li class="cardSpan">
+                                        <a href="#" class="text-black-50 px-2">東京古着日和</a>
+                                    </li>
+                                </ul>
+                                <div class="times">
+                                    <p class="text-black-50 ">2020.04.11</p>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                <div class="col-lg">
+                    <div class="videoCard ">
+                        <div class="VideoTop">
+                            <div class="img-wrap">
+                                <img class="w-100" src="./images/video-Section-05.png" alt="">
+                            </div>
+                            <div class="img-textV">
+                                <p>Fashion</p>
+                            </div>
+                            <div class="videoPlay">
+                                <i class="fa-solid fa-play playIcon"></i>   
+                            </div>
+                        </div>
+                        <div class="videoBotton">
+                            <div class="LatestCard-info pt-2">
+                                <p>超話題ドラマの第２話公開！ 【光石研の東京古着日和 VOL.2 】トラッドにはいまも青春の僕がいる</p>
+                            </div>
+                            <div class="LatestCard-infoS pb-3">
+                                <ul class="list-unstyled d-flex">
+                                    <li class="cardSpan">
+                                        <a href="#" class="text-black-50 pr-2">Fashion</a>
+                                        <span>|</span>
+                                    </li>
+                                    <li class="cardSpan">
+                                        <a href="#" class="text-black-50 px-2">東京古着日和</a>
+                                    </li>
+                                </ul>
+                                <div class="times">
+                                    <p class="text-black-50 ">2020.02.07</p>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                <div class="col-lg">
+                    <div class="videoCard ">
+                        <div class="VideoTop">
+                            <div class="img-wrap">
+                                <img class="w-100" src="./images/video-Section-06.jpeg" alt="">
+                            </div>
+                            <div class="img-textV">
+                                <p>Fashion</p>
+                            </div>
+                            <div class="videoPlay">
+                                <i class="fa-solid fa-play playIcon"></i>   
+                            </div>
+                        </div>
+                        <div class="videoBotton">
+                            <div class="LatestCard-info pt-2">
+                                <p>俳優・光石研の”物欲”ストーリー、オリジナルドラマ『東京古着日和』がスタート！【Penクリエイター・アワード2019】</p>
+                            </div>
+                            <div class="LatestCard-infoS pb-3">
+                                <ul class="list-unstyled d-flex">
+                                    <li class="cardSpan">
+                                        <a href="#" class="text-black-50 pr-2">Fashion</a>
+                                        <span>|</span>
+                                    </li>
+                                    <li class="cardSpan">
+                                        <a href="#" class="text-black-50 px-2">東京車日記</a>
+                                    </li>
+                                </ul>
+                                <div class="times">
+                                    <p class="text-black-50 ">2019.12.02</p>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+    <div class="blank"></div>
+    <div class="trendingSection">
+        <div class="trendingBox mr-auto ml-auto">
+            <div class="titleBox pt-5 ">
+                <div class="lineBox">
+                    <div class="line"></div>
+                </div>
+                <div class="titleName">
+                     <p >Trending</p>
+                </div>
+            </div>
+            <div class="trendingRow">
+                <div class="trendingCard d-flex m-2 justify-content-between ">
+                    <div clnass="col-6 col-lg-9 trendingCardL">
+                        <div class="trendingCardrow">
+                            <div class="bigNumber mr-4">
+                                <span >Nº</span>
+                                <p >01</p>
+                            </div>
+                            <div class="trendingCardInfo">
+                                <a class=""  href="https://www.pen-online.jp/article/011142.html">
+                                    “海中”で泳ぐ魚を見ながら涼しく食事できる、「アンダーウォーター・レストラン」6選|Pen Online
+                                </a>
+                                <div class="col-12 trendingCardBotton p-0 pt-2 d-none d-lg-flex">
+                                    <div class="LatestCard-infoS">
+                                        <ul class="list-unstyled d-flex">
+                                            <li class="cardSpan">
+                                                <a href="#" class="text-black-50 pr-2">Architecture</a>
+                                                <span>|</span>
+                                            </li>
+                                            <li class="cardSpan">
+                                                <a href="#" class="text-black-50 pl-2">ホテル</a>
+                                            </li>
+                                        </ul>
+                                        <div class="times">
+                                            <p class="text-black-50 ">2022.07.23</p>
+                                        </div>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-lg-3 trendingCardR">
+                        <div class="img-wrap border border-secondary">
+                            <div class="trendingImgBG">
+                                <img class="trendingImg" src="./images/trending-01.jpeg" alt="">
+                            </div>
+                        </div>
+                        <div class="img-textT">
+                            <p>Architecture</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 trendingCardBotton p-0 d-lg-none">
+                    <div class="LatestCard-infoS">
+                        <ul class="list-unstyled d-flex">
+                            <li class="cardSpan">
+                                <a href="#" class="text-black-50 pr-2">Architecture</a>
+                                <span>|</span>
+                            </li>
+                            <li class="cardSpan">
+                                <a href="#" class="text-black-50 pl-2">ホテル</a>
+                            </li>
+                        </ul>
+                        <div class="times">
+                            <p class="text-black-50 ">2022.07.23</p>
+                        </div>
+                </div>
+                </div>
+            </div>
+            <div class="trendingRow">
+                <div class="trendingCard d-flex m-2 justify-content-between ">
+                    <div clnass="col-6 col-lg-9 trendingCardL">
+                        <div class="trendingCardrow">
+                            <div class="bigNumber mr-4">
+                                <span >Nº</span>
+                                <p >02</p>
+                            </div>
+                            <div class="trendingCardInfo">
+                                <a class=""  href="https://www.pen-online.jp/article/011121.html">
+                                    俳優引退を仄めかしたブラット・ピット。激動の時代を背負って立ったスターのキャリアから「燃え尽き症候群」対応のヒントを探る |Pen Online
+                                </a>
+                                <div class="col-12 trendingCardBotton p-0 pt-2 d-none d-lg-flex">
+                                    <div class="LatestCard-infoS">
+                                        <ul class="list-unstyled d-flex">
+                                            <li class="cardSpan">
+                                                <a href="#" class="text-black-50 pr-2">Culture</a>
+                                            </li>
+                                        </ul>
+                                        <div class="times">
+                                            <p class="text-black-50 ">2022.07.19</p>
+                                        </div>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-lg-3 trendingCardR">
+                        <div class="img-wrap border border-secondary">
+                            <div class="trendingImgBG">
+                                <img class="trendingImg" src="./images/trending-02.jpeg" alt="">
+                            </div>
+                        </div>
+                        <div class="img-textT-2">
+                            <p>Culture</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 trendingCardBotton p-0 d-lg-none">
+                    <div class="LatestCard-infoS">
+                        <ul class="list-unstyled d-flex">
+                            <li class="cardSpan">
+                                <a href="#" class="text-black-50 pr-2">Culture</a>
+                            </li>
+                        </ul>
+                        <div class="times">
+                            <p class="text-black-50 ">2022.07.19</p>
+                        </div>
+                </div>
+                </div>
+            </div>
+            <div class="trendingRow">
+                <div class="trendingCard d-flex m-2 justify-content-between ">
+                    <div clnass="col-6 col-lg-9 trendingCardL">
+                        <div class="trendingCardrow">
+                            <div class="bigNumber mr-4">
+                                <span >Nº</span>
+                                <p >03</p>
+                            </div>
+                            <div class="trendingCardInfo">
+                                <a class=""  href="https://www.pen-online.jp/article/010717.html">
+                                    俳優・宮沢りえとプレモル醸造家が、最高峰のこだわりに出会う旅。 Vol.1|Pen Online
+                                </a>
+                                <div class="col-12 trendingCardBotton p-0 pt-2 d-none d-lg-flex">
+                                    <div class="LatestCard-infoS">
+                                        <ul class="list-unstyled d-flex">
+                                            <li class="cardSpan">
+                                                <a href="#" class="text-black-50 pr-2">Food</a>
+                                                <span>|</span>
+                                            </li>
+                                            <li class="cardSpan">
+                                                <a href="#" class="text-black-50 pl-2">ビール</a>
+                                            </li>
+                                        </ul>
+                                        <div class="times">
+                                            <p class="text-black-50 ">2022.06.20</p>
+                                        </div>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-lg-3 trendingCardR">
+                        <div class="img-wrap border border-secondary">
+                            <div class="trendingImgBG">
+                                <img class="trendingImg" src="./images/trending-03.jpeg" alt="">
+                            </div>
+                        </div>
+                        <div class="img-textT-3">
+                            <p>Food</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 trendingCardBotton p-0 d-lg-none">
+                    <div class="LatestCard-infoS">
+                        <ul class="list-unstyled d-flex">
+                            <li class="cardSpan">
+                                <a href="#" class="text-black-50 pr-2">Food</a>
+                                <span>|</span>
+                            </li>
+                            <li class="cardSpan">
+                                <a href="#" class="text-black-50 pl-2">ビール</a>
+                            </li>
+                        </ul>
+                        <div class="times">
+                            <p class="text-black-50 ">2022.06.20</p>
+                        </div>
+                </div>
+                </div>
+            </div>
+            <div class="trendingRow">
+                <div class="trendingCard d-flex m-2 justify-content-between ">
+                    <div clnass="col-6 col-lg-9 trendingCardL">
+                        <div class="trendingCardrow">
+                            <div class="bigNumber mr-4">
+                                <span >Nº</span>
+                                <p >04</p>
+                            </div>
+                            <div class="trendingCardInfo">
+                                <a class=""  href="https://www.pen-online.jp/article/011113.html">
+                                    体脂肪を落とすのに有酸素運動はいらない──ネイビーシールズ仕込みの筋トレ術|Pen Online
+                                </a>
+                                <div class="col-12 trendingCardBotton p-0 pt-2 d-none d-lg-flex">
+                                    <div class="LatestCard-infoS">
+                                        <ul class="list-unstyled d-flex">
+                                            <li class="cardSpan">
+                                                <a href="#" class="text-black-50 pr-2">Culture</a>
+                                                <span>|</span>
+                                            </li>
+                                            <li class="cardSpan">
+                                                <a href="#" class="text-black-50 pl-2">from Newsweek</a>
+                                            </li>
+                                        </ul>
+                                        <div class="times">
+                                            <p class="text-black-50 ">2022.07.19</p>
+                                        </div>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-lg-3 trendingCardR">
+                        <div class="img-wrap border border-secondary">
+                            <div class="trendingImgBG">
+                                <img class="trendingImg" src="./images/trending-04.jpeg" alt="">
+                            </div>
+                        </div>
+                        <div class="img-textT-2">
+                            <p>Culture</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 trendingCardBotton p-0 d-lg-none">
+                    <div class="LatestCard-infoS">
+                        <ul class="list-unstyled d-flex">
+                            <li class="cardSpan">
+                                <a href="#" class="text-black-50 pr-2">Culture</a>
+                                <span>|</span>
+                            </li>
+                            <li class="cardSpan">
+                                <a href="#" class="text-black-50 pl-2">from Newsweek</a>
+                            </li>
+                        </ul>
+                        <div class="times">
+                            <p class="text-black-50 ">2022.07.19</p>
+                        </div>
+                </div>
+                </div>
+            </div>
+            <div class="trendingRowF">
+                <div class="trendingCard d-flex m-2 justify-content-between ">
+                    <div clnass="col-6 col-lg-9 trendingCardL">
+                        <div class="trendingCardrow">
+                            <div class="bigNumber mr-4">
+                                <span >Nº</span>
+                                <p >05</p>
+                            </div>
+                            <div class="trendingCardInfo">
+                                <a class=""  href="https://www.pen-online.jp/article/011097.html">
+                                    東京古靴日和#5 メルカリで見つけた崩壊寸前の「ニューバランス1400」完全復活までの道<前編>|Pen Online
+                                </a>
+                                <div class="col-12 trendingCardBotton p-0 pt-2 d-none d-lg-flex">
+                                    <div class="LatestCard-infoS">
+                                        <ul class="list-unstyled d-flex">
+                                            <li class="cardSpan">
+                                                <a href="#" class="text-black-50 pr-2">Fashion</a>
+                                                <span>|</span>
+                                            </li>
+                                            <li class="cardSpan">
+                                                <a href="#" class="text-black-50 pr-2">ヴィンテージ</a>
+                                                <span>|</span>
+                                            </li>
+                                            <li class="cardSpan">
+                                                <a href="#" class="text-black-50 pl-2">SDGs</a>
+                                            </li>
+                                        </ul>
+                                        <div class="times">
+                                            <p class="text-black-50 ">2022.07.14</p>
+                                        </div>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-lg-3 trendingCardR">
+                        <div class="img-wrap border border-secondary">
+                            <div class="trendingImgBG">
+                                <img class="trendingImg" src="./images/trending-05.png" alt="">
+                            </div>
+                        </div>
+                        <div class="img-textT-2">
+                            <p>Fashion</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 trendingCardBotton p-0 d-lg-none">
+                    <div class="LatestCard-infoS">
+                        <ul class="list-unstyled d-flex">
+                            <li class="cardSpan">
+                                <a href="#" class="text-black-50 pr-2">Fashion</a>
+                                <span>|</span>
+                            </li>
+                            <li class="cardSpan">
+                                <a href="#" class="text-black-50 pr-2">ヴィンテージ</a>
+                                <span>|</span>
+                            </li>
+                            <li class="cardSpan">
+                                <a href="#" class="text-black-50 pl-2">SDGs</a>
+                            </li>
+                        </ul>
+                        <div class="times">
+                            <p class="text-black-50 ">2022.07.14</p>
+                        </div>
+                </div>
+                </div>
+            </div>
+            <div class="scrollTopBox m-auto w-100 d-flex justify-content-center">
+                <div class="scrollTop justify-content-center">
+                    <div class="scrollTopT">
+                        <img src="./images/icon_arrow_02.svg" alt="" width="10" height="6">
+                    </div>
+                    <div class="scrollTopB">
+                        <a href="" class=" mb-2 text-dark">Scroll to Top</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footerSection">
+        <div class="footerBox d-flex">
+            <div class="footerLeft">
+                <div class="footerLeft-top d-lg-flex justify-content-lg-between ">
+                    <div class="menuInfo">
+                        <div class="row">
+                            <ul class="list-unstyled d-flex">
+                                <li>
+                                    <a class="mr-3" href="">Pen Magazine</a>
+                                </li>
+                                <li>
+                                    <a class="mr-3"  href="">Official Columnist</a>
+                                </li>
+                                <li>
+                                    <a class="mr-3"  href="">About</a>
+                                </li>
+                                <li>
+                                    <a class="mr-3"  href="">Contact</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="row loginIcon">
+                            <ul class="list-unstyled d-flex">
+                                <li>
+                                    <a href="">Login</a>
+                                    <img class="mr-3"  src="./images/icon_login_01.svg" alt width="16">
+                                </li>
+                                <li>
+                                    <a href="">Search</a>
+                                    <img class="mr-3"  src="./images/icon_search_01.svg" alt width="16" height="16">
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="contactIcon mb-4">
+                        <a class="pr-2" href="https://twitter.com/pen_magazine">
+                            <img src="./images/icon-tw.png" alt="">
+                        </a>
+                        <a class="pr-2" href="https://www.facebook.com/penmagazine">
+                            <img src="./images/icon-fb.png" alt="">
+                        </a>
+                        <a class="pr-2" href="https://www.instagram.com/penmagazine/">
+                            <img src="./images/icon-ig.png" alt="">
+                        </a>
+                        <a class="pr-2" href="https://www.youtube.com/channel/UCdf-2qInbqFQ4M7YYMZtJVg">
+                            <img src="./images/icon-yt.png" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="footerLeft-botton">
+                    <div class="footerBotton-Row">
+                        <ul class="list-unstyled d-flex ">
+                            <li class="pr-4">
+                                ご利用規約
+                            </li>
+                            <li>
+                                <a class="mr-3" href="http://www.cccmh.co.jp/privacy/">プライバシーポリシー</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="copyrightRow">
+                        <div class="copyright">
+                            <p>
+                                ※当サイトに記載の価格は原則、総額表示です。<br> © 2021 CCC Media House Co., Ltd.
+                            </p> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footerRight">
+                <div class="LOGOimg-wrap">
+                    <a href="https://pen.studio/ja/">
+                        <img src="./images/pen_studio_01 (2).svg" alt width="45">
+                    </a>
+                    <a href="https://pen-online.com/">
+                        <img src="./images/pen_international_01.svg" alt width="45">
+                    </a>
+                    <a href=" https://www.newsweekjapan.jp/">
+                        <img src="./images/logo_newsweek_01.svg" alt width="100">
+                    </a>
+                    <a href=" https://madamefigaro.jp/">
+                        <img src="./images/logo_figaro_01.svg" alt width="100">
+                    </a>
+                    <a href="http://books.cccmh.co.jp/">
+                        <img src="./images/logo_books_01.svg" alt width="45">
+                    </a>
+                    <a href="http://otona-no-nagoya.com/">
+                        <img src="./images/logo_nagoya_01.svg" alt width="70">
+                    </a>
+                    <a href="http://www.cccmh.co.jp/">
+                        <img src="./images/logo_ccc_01.svg" alt width="100">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+       
+           
+         
+
+   
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+        integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+        integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+        crossorigin="anonymous"></script>
+</body>
+</html>
